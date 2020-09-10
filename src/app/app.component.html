@@ -1,0 +1,7 @@
+<div class="jumbotron jumbotron-fluid border border-primary">
+  <h1 class="display-3 text-center p-2">{{title}}</h1>
+  <h4 class="display-8 text-center border border-secondary">List of all the cats in alphabetical order based on gender of their owners.</h4>
+  <div class="container text-center border border-secondary">
+      <app-pets *ngFor="let list of pets" [gender]="list.gender" [pets]="list.pets"></app-pets>
+  </div>
+</div>
